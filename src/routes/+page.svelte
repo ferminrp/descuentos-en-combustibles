@@ -1,26 +1,5 @@
 <script>
-
-let discounts = {
-    Lunes : [],
-    Martes : [],
-    Miercoles : [],
-    Jueves: [],
-    Viernes: [],
-    'Sábado' : [],
-    Domingo : [
-      {
-        estacion: 'Axion',
-        cuenta: 'Modo + BBVA',
-        descuento: '30%',
-        tope: '$2,500',
-        condiciones: [
-          'Solo valido en Infinia',
-          'Solo en Provincia'
-        ]
-      }
-    ]
-}
-
+  import discounts from '../data/discounts';
 </script>
 
 <svelte:head>
