@@ -1,5 +1,6 @@
 <script>
-  import discounts from '../data/discounts';
+  import discounts from '../data/orderedDiscounts';
+  
 </script>
 
 <svelte:head>

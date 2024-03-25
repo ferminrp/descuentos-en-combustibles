@@ -1,5 +1,16 @@
 const discounts = {
-    Lunes : [],
+    Lunes : [
+      {
+        estacion: 'Axion',
+        cuenta: 'Modo + BBVA',
+        descuento: '30%',
+        tope: '$2,500',
+        condiciones: [
+          'Solo valido en Infinia',
+          'Solo en Provincia'
+        ]
+      }
+    ],
     Martes : [],
     Miercoles : [],
     Jueves: [],
