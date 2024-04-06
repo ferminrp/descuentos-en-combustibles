@@ -1,4 +1,5 @@
 <script>
+	import Card from '../components/Card.svelte'; // Asegúrate de que la ruta sea correcta
 	import discounts from '../data/orderedDiscounts';
 	import estaciones from '../data/estaciones';
 </script>
@@ -19,28 +20,7 @@
 				{#if descuentos.length > 0}
 					<div class="flex flex-col gap-2">
 						{#each descuentos as item, index (item)}
-							<div class="bg-gray-50 flex gap-4 p-4 rounded-md shadow-md my-1">
-								<img
-									class="w-12 h-12 rounded-full"
-									src={estaciones[item.estacion.toLowerCase()]}
-									alt=""
-								/>
-								<div>
-									<p class="font-bold">{item.descuento} OFF en {item.estacion}</p>
-									{#if item.tope.length > 0 || item.condiciones.length > 0}
-										<ul class="list-disc pl-5">
-											{#if item.tope.length > 0}
-												<li>Tope de {item.tope}</li>
-											{/if}
-											{#if item.condiciones.length > 0}
-												{#each item.condiciones as condicion, index (item)}
-													<li>{condicion}</li>
-												{/each}
-											{/if}
-										</ul>
-									{/if}
-								</div>
-							</div>
+						<Card {item} estacionImage={estaciones[item.estacion.toLowerCase()]} />
 						{/each}
 					</div>
 				{:else}
