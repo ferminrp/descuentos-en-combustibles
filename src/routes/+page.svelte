@@ -1,12 +1,15 @@
 <script>
-	import Card from '../components/Card.svelte'; // Asegúrate de que la ruta sea correcta
-	import discounts from '../data/orderedDiscounts';
-	import estaciones from '../data/estaciones';
+	// Componentes
+	import Card from '../components/Card.svelte';
+
+	// Data
+	import discounts from '../data/orderedDiscounts'; // Listado de descuentos
+	import estaciones from '../data/estaciones'; // Logos de estaciones de servicio
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>Ahorra en combustible</title>
+	<meta name="description" content="Encontra los descuentos en combustible para ahorrar la próxima vez que tengas que cargar nafta, gas o gasoil." />
 </svelte:head>
 
 <section
