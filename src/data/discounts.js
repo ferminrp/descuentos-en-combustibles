@@ -5,14 +5,16 @@ const discounts = {
 			cuenta: 'Modo + BBVA',
 			descuento: '30%',
 			tope: '$2,500',
-			condiciones: ['Solo valido en Infinia', 'Solo en Provincia']
+			condiciones: ['Solo valido en Infinia', 'Solo en Provincia'],
+			tags: ['Porcentual','Lorem','Ipsum']
 		},
 		{
 			estacion: 'Axion',
 			cuenta: 'Modo + BBVA',
 			descuento: '30%',
 			tope: '$2,500',
-			condiciones: ['Solo valido en Infinia', 'Solo en Provincia']
+			condiciones: ['Solo valido en Infinia', 'Solo en Provincia'],
+			tags: ['proident','aute']
 		}
 	],
 	Martes: [],
@@ -26,7 +28,8 @@ const discounts = {
 			cuenta: 'Modo + BBVA',
 			descuento: '30%',
 			tope: '$2,500',
-			condiciones: ['Solo valido en Infinia', 'Solo en Provincia']
+			condiciones: ['Solo valido en Infinia', 'Solo en Provincia'],
+			tags: ['ullamco','dolore']
 		}
 	]
 };
